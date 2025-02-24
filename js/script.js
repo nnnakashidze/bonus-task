@@ -9,7 +9,7 @@ myBtn.addEventListener("click", (event) => {
 
   const username = input.value.trim();
 
-  let url = "https://api.github.com/users/${username}";
+  let url = `https://api.github.com/users/${username}`;
 
   fetch(url)
     .then((response) => response.json())
